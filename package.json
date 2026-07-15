@@ -1,0 +1,13 @@
+{
+  "name": "clearflow-wastewater-tracker",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "ClearFlow wastewater treatment project tracker: static landing page + dashboard, updated nightly by a GitHub Actions job that researches new/changed projects via the Claude API.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "update": "node scripts/nightly-update.mjs"
+  }
+}
