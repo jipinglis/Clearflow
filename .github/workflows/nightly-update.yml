@@ -1,0 +1,85 @@
+yamlname: ClearFlow Nightly Updatename: ClearFlow Nightly Update
+
+on:
+  schedule:
+    # 13:00 UTC ≈ 9:00am US Eastern (EDT). Shifts to 8am during EST (Nov–Mar).
+    # Adjust the cron below, or trigger manually any time via workflow_dispatch.
+    - cron: "0 13 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Run nightly research update
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/nightly-update.mjs
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "clearflow-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add clearflow-dashboard.html
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Automated nightly update: $(date -u +%Y-%m-%d)"
+            git push
+          fi
+
+on:
+  schedule:
+    # 13:00 UTC ≈ 9:00am US Eastern (EDT). Shifts to 8am during EST (Nov–Mar).
+    # Adjust the cron below, or trigger manually any time via workflow_dispatch.
+    - cron: "0 13 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Run nightly research update
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/nightly-update.mjs
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "clearflow-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add clearflow-dashboard.html
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Automated nightly update: $(date -u +%Y-%m-%d)"
+            git push
+          fi
+Commit that file (commit directly to main).
+
+Add file → Create new file again. Name it:
+scripts/nightly-update.mjs
+
+This one's long (the actual research/update script) — rather than paste 250 lines here, let me know once you've created the .yml file above and I'll walk you through getting this one in too. Want me to paste the full script next, or would you rather try the folder drag-and-drop one more time now that we know just the two nested paths are the risk?
