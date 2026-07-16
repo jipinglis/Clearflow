@@ -251,7 +251,7 @@ footer{text-align:center;padding:30px;font-size:12.5px;color:var(--gray-700);bor
 // verify current status there before acting, since procurement stages and
 // dollar figures change frequently.
 // ---------------------------------------------------------------------------
-const LAST_CHECKED = "2026-07-15";
+const LAST_CHECKED = "2026-07-16";
 
 const PROJECTS = [
   {
@@ -853,14 +853,14 @@ const PROJECTS = [
     "capacity": "Serves nearly 70 homes",
     "leadFirm": "Not yet publicly confirmed",
     "competingFirms": [],
-    "estValue": "$65M",
-    "fundingSource": "IHS Sanitation Facilities Construction (IIJA funds)",
+    "estValue": "$65 million",
+    "fundingSource": "Indian Health Service FY2026 IIJA allocation, supplemented by an EPA-IHS partnership contributing an additional $30 million toward tribal water infrastructure",
     "timeline": "Announced as part of IHS's FY2026 $700M tribal water infrastructure allocation",
     "source": "Indian Health Service",
     "sourceUrl": "https://www.ihs.gov/newsroom/pressreleases/2026-press-releases/indian-health-service-directs-700-million-in-infrastructure-funds-to-tribal-water-projects/",
     "dateAdded": "2026-07-02",
-    "lastUpdated": "2026-07-02",
-    "notes": "Teller's first comprehensive piped water and wastewater system, replacing decentralized arrangements for a remote Alaska Native community."
+    "lastUpdated": "2026-07-16",
+    "notes": "IHS confirmed the $65 million award will fund Teller's first piped water and sewer system, replacing honey-bucket and hauled-water service for roughly 70 homes."
   },
   {
     "id": "az-nm-ut-navajonation-water-wastewater-2026",
@@ -1062,14 +1062,14 @@ const PROJECTS = [
     "capacity": "Not specified",
     "leadFirm": "Not yet publicly confirmed",
     "competingFirms": [],
-    "estValue": "$396M (Phase I)",
-    "fundingSource": "Colorado Springs Utilities capital program",
+    "estValue": "$396 million (Phase I)",
+    "fundingSource": "Bonds, customer base-rate revenues and cost recovery",
     "timeline": "Slated to begin 2026, continuing through 2030",
     "source": "Colorado Springs Utilities",
     "sourceUrl": "https://www.csu.org/current-projects/eastern-wastewater-system-expansion",
     "dateAdded": "2026-07-02",
-    "lastUpdated": "2026-07-02",
-    "notes": "Expands wastewater conveyance and treatment capacity to serve growth on the city's east side."
+    "lastUpdated": "2026-07-16",
+    "notes": "Colorado Springs Utilities' broader Wastewater System Expansion (feeding the Milton Proby Gravity Interceptor) is planned in phases over 50 years; Phase I includes 18 miles of pipeline and two new lift stations, with construction expected to begin 2027."
   },
   {
     "id": "sc-gswsa-bucksport-wwtp-2026",
@@ -2010,16 +2010,16 @@ const PROJECTS = [
     "stage": "Design",
     "owner": "City of San José Environmental Services (Water Utilities) / City of Santa Clara",
     "capacity": "Second-largest advanced wastewater treatment plant in the western US; treats avg. 110 MGD (167 MGD max), serving ~1.5M residents and 17,000+ businesses across 8 cities and 4 sanitation districts",
-    "leadFirm": "Jacobs (progressive design-build); Walsh Construction and Structural Technologies (contracting partners)",
+    "leadFirm": "Jacobs",
     "competingFirms": [],
-    "estValue": "$200M",
+    "estValue": "$200 million",
     "fundingSource": "City capital program",
     "timeline": "Contract awarded January 21, 2026; upgrades aged mesophilic digesters and adds a new FOG receiving station, designed for growth through 2077",
     "source": "Jacobs Newsroom",
     "sourceUrl": "https://www.jacobs.com/newsroom/press-release/jacobs-awarded-contract-modernize-one-largest-advanced-wastewater-treatment",
     "dateAdded": "2026-07-10",
-    "lastUpdated": "2026-07-10",
-    "notes": "Modernizes biosolids treatment infrastructure; expected to increase biogas output by up to 36% and cut biosolids production by as much as 74 wet tons/day while prioritizing seismic resiliency."
+    "lastUpdated": "2026-07-16",
+    "notes": "Jacobs selected as progressive design-build contractor (announced Jan 21, 2026) to replace aged mesophilic digesters and add a new FOG receiving station."
   },
   {
     "id": "nj-northhudson-h6h7-phase3-2026",
@@ -2088,14 +2088,14 @@ const PROJECTS = [
     "capacity": "75 MGD → 100 MGD by 2032",
     "leadFirm": "MWH Constructors, Inc.",
     "competingFirms": [],
-    "estValue": "$1.5 billion (revised total contract, up from $900 million)",
-    "fundingSource": "Up to $1 billion WIFIA loan (increased from prior amount) plus $59 million Texas Water Development Board CWSRF",
+    "estValue": "$1.5 billion",
+    "fundingSource": "Up to $1 billion EPA WIFIA loan plus $59 million Texas Water Development Board CWSRF financing",
     "timeline": "Design contract awarded to AECOM September 2024; MWH Constructors selected May 2024; groundbreaking held April 2026; council approved a $600M cost increase February 2026; completion targeted 2032",
     "source": "Community Impact",
     "sourceUrl": "https://communityimpact.com/austin/east-austin/government/2026/04/14/austin-breaks-ground-on-15b-wastewater-plant-expansion/",
     "dateAdded": "2026-07-11",
-    "lastUpdated": "2026-07-15",
-    "notes": "Council authorized $600M contingency increase (March 2026) for GMPs 6-8, bringing total construction contract to $1.5B; WIFIA loan authorization increased by $553M to a revised total of up to $1B."
+    "lastUpdated": "2026-07-16",
+    "notes": "Austin Water held a formal groundbreaking ceremony for the expansion; all improvements are being made while the plant remains fully operational."
   },
   {
     "id": "wv-huntington-sanitaryboard-wwtp-2026",
@@ -2425,6 +2425,163 @@ const PROJECTS = [
     "notes": "Brings facility into compliance with nutrient reduction requirements for Susquehanna River Basin; includes second aeration tank, 4th final clarifier, WAS-thickening facility, trucked waste receiving facility, and side-stream treatment conversion.",
     "dateAdded": "2026-07-15",
     "lastUpdated": "2026-07-15"
+  },
+  {
+    "id": "or-medford-rwrf-upgrade-2026",
+    "name": "Regional Water Reclamation Facility Improvement Project",
+    "location": "White City / Medford, OR",
+    "type": "Nutrient Removal (BNR) Upgrade & Expansion",
+    "stage": "Under Construction",
+    "owner": "City of Medford (Regional Water Reclamation Facility)",
+    "capacity": "Serves Medford, Central Point, Eagle Point, Talent, Phoenix, Jacksonville & White City",
+    "leadFirm": "Slayden Constructors",
+    "competingFirms": [
+      "West Yost",
+      "Carollo Engineers"
+    ],
+    "estValue": "$300–330 million",
+    "fundingSource": "EPA WIFIA loan ($147.2 million) plus city utility rate revenue and additional borrowing",
+    "timeline": "Groundbreaking June 2026; final design due to Oregon DEQ Sept 1 2026; new facilities construction due Sept 1 2028; full permit compliance by Sept 1 2030",
+    "source": "Construction Front / EPA / Rogue Valley Times",
+    "sourceUrl": "https://constructionfront.com/2026-06-29-medford-breaks-ground-on-us330m-regional-water-reclamation-facility-upgrade-in-oregon/",
+    "notes": "Driven by stricter Oregon DEQ discharge permit limits on phosphorus and nitrogen into the Rogue River; also included Black & Veatch among project partners per Construction Front.",
+    "dateAdded": "2026-07-16",
+    "lastUpdated": "2026-07-16"
+  },
+  {
+    "id": "ga-canton-wpcp-expansion-2026",
+    "name": "Canton Water Pollution Control Plant Expansion",
+    "location": "Canton, GA",
+    "type": "Plant Expansion / Advanced Treatment",
+    "stage": "Completed",
+    "owner": "City of Canton, GA",
+    "capacity": "7 MGD (50% capacity increase)",
+    "leadFirm": "Clark Construction",
+    "competingFirms": [
+      "Reeves Young"
+    ],
+    "estValue": "Not disclosed (largest capital improvement in city history)",
+    "fundingSource": "Not disclosed",
+    "timeline": "Ribbon-cutting completed July 2026",
+    "source": "Construction Owners Club / Clark Construction",
+    "sourceUrl": "https://www.constructionowners.com/news/clark-water-and-reeves-young-complete-canton-wastewater-treatment-plant-expansion",
+    "notes": "New infrastructure includes membrane filtration, tertiary treatment, an advanced laboratory and solids processing upgrades.",
+    "dateAdded": "2026-07-16",
+    "lastUpdated": "2026-07-16"
+  },
+  {
+    "id": "in-spencer-wwtp-expansion-2026",
+    "name": "Spencer Wastewater Treatment Plant Expansion",
+    "location": "Spencer, Owen County, IN",
+    "type": "Plant Expansion",
+    "stage": "Under Construction",
+    "owner": "Town of Spencer, IN",
+    "capacity": "880,000 GPD (up from 700,000 GPD)",
+    "leadFirm": "Not disclosed",
+    "competingFirms": [],
+    "estValue": "$10.8 million",
+    "fundingSource": "Indiana Finance Authority State Revolving Fund Loan Program",
+    "timeline": "Groundbreaking June 2026; completion timeline not yet announced",
+    "source": "Inside Indiana Business",
+    "sourceUrl": "https://www.insideindianabusiness.com/articles/spencer-to-break-ground-on-wastewater-treatment-plant-expansion",
+    "notes": "Expansion designed to accommodate 1,000 new homes in support of workforce housing and community growth.",
+    "dateAdded": "2026-07-16",
+    "lastUpdated": "2026-07-16"
+  },
+  {
+    "id": "co-mesacounty-persigo-wwtp-phase1-2026",
+    "name": "Persigo Wastewater Treatment Plant Phase 1 Expansion",
+    "location": "Grand Junction / Mesa County, CO",
+    "type": "Expansion / Disinfection & Biosolids Upgrade",
+    "stage": "Under Construction",
+    "owner": "City of Grand Junction & Mesa County (joint owners)",
+    "capacity": "Not disclosed",
+    "leadFirm": "Not disclosed",
+    "competingFirms": [],
+    "estValue": "Not disclosed",
+    "fundingSource": "Not disclosed",
+    "timeline": "Groundbreaking March 2024; Phase 1 ongoing as of June 2026",
+    "source": "Mesa County",
+    "sourceUrl": "https://www.mesacounty.us/news/county-wide/phase-1-persigo-wastewater-treatment-plant-expansion-underway",
+    "notes": "Includes new screening processes, advanced electrical and biosolids storage facilities, and improved aeration and disinfection systems at a facility serving since 1984.",
+    "dateAdded": "2026-07-16",
+    "lastUpdated": "2026-07-16"
+  },
+  {
+    "id": "ca-sanmateo-wwtp-expansion-2026",
+    "name": "San Mateo Wastewater Treatment Plant Expansion (Clean Water Program)",
+    "location": "San Mateo, CA",
+    "type": "Plant Rehabilitation & Expansion",
+    "stage": "Under Construction",
+    "owner": "City of San Mateo (Clean Water Program)",
+    "capacity": "78 MGD peak wet-weather capacity",
+    "leadFirm": "Not disclosed",
+    "competingFirms": [],
+    "estValue": "$597 million",
+    "fundingSource": "Not disclosed",
+    "timeline": "Ribbon-cutting held Sept 2025 for near-completion; final path/parking reopening scheduled May 2026",
+    "source": "Clean Water Program San Mateo",
+    "sourceUrl": "https://cleanwaterprogramsanmateo.org/wwtp/",
+    "notes": "Most significant rehabilitation at the plant since the 1970s; largest component of the citywide Clean Water Program, delivered in three phases over six years.",
+    "dateAdded": "2026-07-16",
+    "lastUpdated": "2026-07-16"
+  },
+  {
+    "id": "or-aumsville-wwtp-upgrade-2026",
+    "name": "Aumsville Wastewater Treatment Plant Improvements",
+    "location": "Aumsville, OR",
+    "type": "Plant Upgrade (Headworks, SBR, DAF Clarifier)",
+    "stage": "Bidding/Procurement",
+    "owner": "City of Aumsville",
+    "capacity": "Not disclosed",
+    "leadFirm": "Not disclosed",
+    "competingFirms": [],
+    "estValue": "$20 million",
+    "fundingSource": "Not disclosed",
+    "timeline": "Bids due July 14, 2026",
+    "source": "Bid Banana / The Bid Lab",
+    "sourceUrl": "https://bidbanana.thebidlab.com/bid/LZns1IdpsxSXxmeGKnyN",
+    "notes": "Scope includes new headworks, sequencing batch reactors, equalization basin, blower building, chlorine contact chamber, and dissolved-air-flotation clarifier.",
+    "dateAdded": "2026-07-16",
+    "lastUpdated": "2026-07-16"
+  },
+  {
+    "id": "ky-lexington-consentdecree-2026",
+    "name": "Lexington Sanitary Sewer Consent Decree Program",
+    "location": "Lexington, KY",
+    "type": "Collection System Rehabilitation / Consent Decree",
+    "stage": "Under Construction",
+    "owner": "City of Lexington (Division of Water Quality)",
+    "capacity": "Citywide sanitary sewer system",
+    "leadFirm": "Not disclosed",
+    "competingFirms": [],
+    "estValue": "Not disclosed (multiple active contracts)",
+    "fundingSource": "Municipal funding / rates",
+    "timeline": "Amended consent decree extends compliance deadline from Dec 2026 to Dec 2030; active projects include New Circle Road trunks, Tates Creek Road (started April 2026, ~18 months), and Rosemont Garden/Wolf Run Creek (completion end of 2026)",
+    "source": "EPA / City of Lexington / WKYT",
+    "sourceUrl": "https://www.epa.gov/newsreleases/epa-and-city-lexington-work-extend-compliance-deadline-sanitary-sewer-system",
+    "notes": "Original 2011 Clean Water Act consent decree; 75 remedial projects completed to date, 41 more required including a 50% capacity increase to the East Hickman Force Main and pump station upgrades.",
+    "dateAdded": "2026-07-16",
+    "lastUpdated": "2026-07-16"
+  },
+  {
+    "id": "md-frederickcounty-pointofrocks-wwtp-2026",
+    "name": "Point of Rocks Wastewater Treatment Plant (WWTP) Improvements",
+    "location": "Point of Rocks, Frederick County, MD",
+    "type": "Headworks & Plant Upgrade",
+    "stage": "Bidding/Procurement",
+    "owner": "Frederick County, MD (Department of Wastewater Treatment and Disposal)",
+    "capacity": "Not disclosed",
+    "leadFirm": "Not disclosed",
+    "competingFirms": [],
+    "estValue": "Not disclosed",
+    "fundingSource": "Not disclosed",
+    "timeline": "730 calendar days from Notice to Proceed; question deadline was Sept 30, 2025",
+    "source": "ConstructConnect",
+    "sourceUrl": "https://projects.constructconnect.com/details/7227600-point-of-rocks-wastewater-treatment-plant-wwtp-improvements&find_loc=maryland-21777",
+    "notes": "Scope includes new headworks process building, influent pump replacement, standby generator, blowers, air lift pumps, and electrical/controls upgrades.",
+    "dateAdded": "2026-07-16",
+    "lastUpdated": "2026-07-16"
   }
 ];
 
@@ -2870,6 +3027,14 @@ const OWNER_CONTACTS = {
   },
   "Lancaster Area Sewer Authority (LASA)": {
     "website": "https://lasa.org"
+  },
+  "City of Medford (Public Works)": {
+    "website": "https://www.medfordoregon.gov/Government/Departments/Public-Works",
+    "phone": "(541) 774-2141"
+  },
+  "Frederick County, MD (Department of Wastewater Treatment and Disposal)": {
+    "website": "https://frederickcountymd.gov/1283/Wastewater-Treatment-Disposal",
+    "phone": "301-600-1825"
   }
 };
 
@@ -3086,6 +3251,11 @@ const FIRM_CONTACTS = [
     "name": "Judy Construction Company",
     "website": "https://judycc.com",
     "phone": "859-234-6900"
+  },
+  {
+    "name": "Slayden Constructors",
+    "website": "https://www.slayden.com/",
+    "phone": "503.769.1969"
   }
 ];
 
