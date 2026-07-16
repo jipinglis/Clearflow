@@ -138,7 +138,7 @@ a{color:var(--orange);text-decoration:none;}
 .firms-section .section-head{margin-left:auto;margin-right:auto;}
 .firms-row{max-width:1000px;margin:36px auto 0;display:flex;flex-wrap:wrap;gap:12px;justify-content:center;}
 .firm-pill{border:1px solid var(--gray-300);background:var(--gray-100);padding:12px 22px;font-weight:800;font-size:13.5px;color:var(--ink);text-transform:uppercase;letter-spacing:.02em;transition:border-color .15s ease,background .15s ease;}
-.firm-pill:hover{border-color:var(--orange);background:#fdf1ed;}
+.firm-pill:hover{border-color:var(--orange);background:#fdf1ed;}.firms-grid{max-width:1200px;margin:36px auto 0;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}@media(max-width:900px){.firms-grid{grid-template-columns:repeat(2,1fr);}}@media(max-width:600px){.firms-grid{grid-template-columns:1fr;}}.firm-card{display:flex;gap:14px;align-items:flex-start;text-align:left;background:var(--white);border:1px solid var(--gray-300);border-left:4px solid var(--orange);padding:20px 22px;transition:transform .2s ease,box-shadow .2s ease;}.firm-card:hover{transform:translateY(-3px);box-shadow:0 12px 24px rgba(23,17,16,0.08);}.firm-card .tag{flex-shrink:0;width:8px;height:8px;border-radius:50%;background:var(--orange);margin-top:7px;}.firm-card h4{font-size:15px;font-weight:800;margin-bottom:5px;text-transform:none;}.firm-card p{font-size:13px;color:var(--gray-700);margin:0;text-transform:none;font-weight:400;line-height:1.5;}
 
 /* ---------- CTA ---------- */
 .cta-section{background:var(--ink);color:var(--white);padding:72px 32px;text-align:center;}
@@ -281,22 +281,27 @@ footer address,footer p{font-style:normal;margin:0 0 4px;color:#bdb2ad;font-size
 
 <!-- FIRMS -->
 <section class="firms-section">
-  <div class="section-head">
+  <div class="section-head center">
     <div class="eyebrow">Firms In This Space</div>
     <h2>The Specialists We Track Most Closely</h2>
   </div>
-  <div class="firms-row">
-    <div class="firm-pill">Black &amp; Veatch</div>
-    <div class="firm-pill">Jacobs</div>
-    <div class="firm-pill">CDM Smith</div>
-    <div class="firm-pill">Stantec</div>
-    <div class="firm-pill">HDR</div>
-    <div class="firm-pill">Brown and Caldwell</div>
-    <div class="firm-pill">Hazen and Sawyer</div>
-    <div class="firm-pill">Arcadis</div>
-    <div class="firm-pill">Woodard &amp; Curran</div>
-    <div class="firm-pill">AECOM</div>
-    <div class="firm-pill">+ regional &amp; emerging firms</div>
+  <div class="firms-grid">
+    <div class="firm-card"><div class="tag"></div><div><h4>Black &amp; Veatch</h4><p>Employee-owned engineering giant and one of the largest players in water and wastewater treatment design-build worldwide.</p></div></div>
+    <div class="firm-card"><div class="tag"></div><div><h4>Jacobs</h4><p>Global engineering firm with a major water and environment division that handles large municipal wastewater megaprojects.</p></div></div>
+    <div class="firm-card"><div class="tag"></div><div><h4>CDM Smith</h4><p>Employee-owned firm specializing heavily in water and wastewater infrastructure design for municipalities.</p></div></div>
+    <div class="firm-card"><div class="tag"></div><div><h4>Stantec</h4><p>Global design and engineering firm with a large water practice serving municipal wastewater clients across the US.</p></div></div>
+    <div class="firm-card"><div class="tag"></div><div><h4>HDR</h4><p>Architecture and engineering firm with a deep water business unit focused on treatment plant design and conveyance systems.</p></div></div>
+    <div class="firm-card"><div class="tag"></div><div><h4>Brown and Caldwell</h4><p>Employee-owned firm dedicated almost exclusively to water and wastewater engineering for public agencies.</p></div></div>
+    <div class="firm-card"><div class="tag"></div><div><h4>Hazen and Sawyer</h4><p>Engineering firm specializing in water and wastewater treatment, known for major urban treatment plant upgrades.</p></div></div>
+    <div class="firm-card"><div class="tag"></div><div><h4>Arcadis</h4><p>Global design and consultancy firm with a substantial water infrastructure and wastewater treatment practice.</p></div></div>
+    <div class="firm-card"><div class="tag"></div><div><h4>Woodard &amp; Curran</h4><p>Integrated engineering, science, and construction firm heavily focused on water and wastewater solutions.</p></div></div>
+    <div class="firm-card"><div class="tag"></div><div><h4>AECOM</h4><p>One of the largest global infrastructure firms, with a sizable water and wastewater design and program management practice.</p></div></div>
+    <div class="firm-card"><div class="tag"></div><div><h4>Carollo Engineers</h4><p>One of the largest US firms dedicated exclusively to water and wastewater engineering.</p></div></div>
+    <div class="firm-card"><div class="tag"></div><div><h4>Greeley and Hansen</h4><p>Historic engineering firm known specifically for large municipal wastewater treatment plant design.</p></div></div>
+    <div class="firm-card"><div class="tag"></div><div><h4>Burns &amp; McDonnell</h4><p>Full-service engineering firm with a major water and environmental practice serving municipal wastewater clients.</p></div></div>
+    <div class="firm-card"><div class="tag"></div><div><h4>Tetra Tech</h4><p>Global environmental engineering firm with extensive federal and municipal water infrastructure work.</p></div></div>
+    <div class="firm-card"><div class="tag"></div><div><h4>GHD</h4><p>Global engineering and environmental consultancy with a growing US water and wastewater treatment practice.</p></div></div>
+    <div class="firm-card"><div class="tag"></div><div><h4>Freese and Nichols</h4><p>Leading Texas and Southwest engineering firm known for municipal water and wastewater treatment design.</p></div></div>
   </div>
 </section>
 
@@ -341,9 +346,9 @@ footer address,footer p{font-style:normal;margin:0 0 4px;color:#bdb2ad;font-size
     opacity: 1, y: 0, duration: 0.55, stagger: 0.06, ease: "power2.out"
   });
 
-  gsap.set(".firm-pill", { opacity: 0, y: 14 });
-  gsap.to(".firm-pill", {
-    scrollTrigger: { trigger: ".firms-row", start: "top 82%", toggleActions: "play none none reverse" },
+  gsap.set(".firm-card", { opacity: 0, y: 14 });
+  gsap.to(".firm-card", {
+    scrollTrigger: { trigger: ".firms-grid", start: "top 82%", toggleActions: "play none none reverse" },
     opacity: 1, y: 0, duration: 0.45, stagger: 0.05, ease: "power2.out"
   });
 
