@@ -250,7 +250,7 @@ footer{text-align:center;padding:30px;font-size:12.5px;color:var(--gray-700);bor
 // verify current status there before acting, since procurement stages and
 // dollar figures change frequently.
 // ---------------------------------------------------------------------------
-const LAST_CHECKED = "2026-07-16";
+const LAST_CHECKED = "2026-07-17";
 
 const PROJECTS = [
   {
@@ -1839,15 +1839,17 @@ const PROJECTS = [
     "owner": "Collier County Water-Sewer District",
     "capacity": "1.5 MGD → 5.0 MGD",
     "leadFirm": "Bowman Consulting Group Ltd.",
-    "competingFirms": [],
+    "competingFirms": [
+      "Bowman Consulting Group"
+    ],
     "estValue": "$172M total program (Bowman CEI contract: $4.9M)",
     "fundingSource": "Collier County capital program",
     "timeline": "CEI contract awarded April 2026; ~40-month construction assignment covering start-up and commissioning",
     "source": "GlobeNewswire (Bowman Consulting)",
     "sourceUrl": "https://www.globenewswire.com/news-release/2026/04/15/3274282/0/en/Bowman-Awarded-4-9-Million-Contract-to-Lead-Construction-Engineering-Inspection-for-Major-Wastewater-Treatment-Expansion.html",
     "dateAdded": "2026-07-09",
-    "lastUpdated": "2026-07-15",
-    "notes": "Bowman awarded a $4.9 million CEI (construction engineering & inspection) contract in April 2026, spanning ~40 months, supporting the $172 million capacity expansion from 1.5 MGD to 5.0 MGD."
+    "lastUpdated": "2026-07-17",
+    "notes": "Bowman Consulting Group was awarded a $4.9 million contract by Collier County for construction engineering and inspection (CEI) services spanning approximately 40 months, supporting the plant's expansion from 1.5 MGD to 5.0 MGD as part of a $172 million infrastructure investment."
   },
   {
     "id": "tx-lewisville-prairiecreek-wwtp-2026",
@@ -1865,8 +1867,8 @@ const PROJECTS = [
     "source": "Wastewater Digest",
     "sourceUrl": "https://www.wwdmag.com/utility-management/news/55388062/lewisville-awards-first-phase-of-prairie-creek-wwtp-expansion",
     "dateAdded": "2026-07-09",
-    "lastUpdated": "2026-07-15",
-    "notes": "Contract awarded to Crescent Constructors to increase plant capacity from 12 MGD to 16 MGD via aeration basin expansion, as first phase toward a long-term 20 MGD goal."
+    "lastUpdated": "2026-07-17",
+    "notes": "Crescent Constructors, an affiliate of Zachry Construction Corporation, has been awarded the Prairie Creek Wastewater Treatment Plant Aeration Basin Expansion project, increasing plant capacity from 12 MGD to 16 MGD with a long-term goal of 20 MGD; final completion scheduled for November 28, 2028."
   },
   {
     "id": "tx-tyler-consentdecree-wwcontracts-2026",
@@ -2087,14 +2089,14 @@ const PROJECTS = [
     "capacity": "75 MGD → 100 MGD by 2032",
     "leadFirm": "MWH Constructors, Inc.",
     "competingFirms": [],
-    "estValue": "$1.5 billion",
+    "estValue": "$1.5 billion (construction contract); WIFIA loan increased to $1 billion",
     "fundingSource": "Up to $1 billion EPA WIFIA loan plus $59 million Texas Water Development Board CWSRF financing",
     "timeline": "Design contract awarded to AECOM September 2024; MWH Constructors selected May 2024; groundbreaking held April 2026; council approved a $600M cost increase February 2026; completion targeted 2032",
     "source": "Community Impact",
     "sourceUrl": "https://communityimpact.com/austin/east-austin/government/2026/04/14/austin-breaks-ground-on-15b-wastewater-plant-expansion/",
     "dateAdded": "2026-07-11",
-    "lastUpdated": "2026-07-16",
-    "notes": "Austin Water held a formal groundbreaking ceremony for the expansion; all improvements are being made while the plant remains fully operational."
+    "lastUpdated": "2026-07-17",
+    "notes": "Austin City Council approved amendment increasing the MWH Constructors construction contract to a revised total not-to-exceed $1.5 billion and increased the associated WIFIA loan amount by $553 million to a revised total of up to $1 billion. Austin Water and City leaders broke ground on the $1.5 billion expansion of the Walnut Creek Wastewater Treatment Plant."
   },
   {
     "id": "wv-huntington-sanitaryboard-wwtp-2026",
@@ -2581,6 +2583,86 @@ const PROJECTS = [
     "notes": "Scope includes new headworks process building, influent pump replacement, standby generator, blowers, air lift pumps, and electrical/controls upgrades.",
     "dateAdded": "2026-07-16",
     "lastUpdated": "2026-07-16"
+  },
+  {
+    "id": "ri-narragansett-scarborough-sludge-2026",
+    "name": "Scarborough Wastewater Treatment Facility Sludge Pump Replacement",
+    "location": "Narragansett, RI",
+    "type": "Biosolids handling / equipment replacement",
+    "stage": "Pre-Design",
+    "owner": "Town of Narragansett, RI",
+    "capacity": "1.4 MGD average",
+    "leadFirm": "",
+    "competingFirms": [],
+    "estValue": "Not disclosed",
+    "fundingSource": "CWSRF (RI DEM / RI Infrastructure Bank)",
+    "timeline": "Categorical Exclusion environmental review in progress 2026",
+    "source": "RI DEM CWSRF public notice",
+    "sourceUrl": "https://dem.ri.gov/environmental-protection-bureau/water-resources/financial-assistance/clean-water-state-revolving",
+    "notes": "RI DEM issued a public notice for a proposed Categorical Exclusion for the Town of Narragansett's replacement of sludge pumps at the Scarborough Wastewater Treatment Facility, financed via CWSRF.",
+    "dateAdded": "2026-07-17",
+    "lastUpdated": "2026-07-17"
+  },
+  {
+    "id": "pa-portroyal-wwtp-improvements-2026",
+    "name": "Port Royal (Bergstresser) Wastewater Treatment Plant Improvement Project",
+    "location": "Port Royal, Juniata County, PA",
+    "type": "Disinfection upgrade / SSO elimination / pump station rehabilitation",
+    "stage": "Under Construction",
+    "owner": "Port Royal Municipal Authority",
+    "capacity": "Not disclosed",
+    "leadFirm": "CP Engineers",
+    "competingFirms": [
+      "cb3 Solutions, LLC"
+    ],
+    "estValue": "$3.7 million",
+    "fundingSource": "PENNVEST loan/grant + federal funding",
+    "timeline": "Groundbreaking June 2026",
+    "source": "The Sentinel (Lewistown, PA)",
+    "sourceUrl": "https://www.lewistownsentinel.com/news/local-news/2026/06/utility-upgrade/",
+    "notes": "Groundbreaking held for a project to install UV disinfection at the Bergstresser plant, rehabilitate/reroute pump stations, and eliminate a sanitary sewer overflow into the Juniata River. CP Engineers and Port Royal Municipal Authority hosted a groundbreaking ceremony for the Port Royal Wastewater Treatment Plant improvement project, which aims to eliminate sanitary sewer overflows into the Juniata River.",
+    "dateAdded": "2026-07-17",
+    "lastUpdated": "2026-07-17"
+  },
+  {
+    "id": "in-newburgh-wwtp-floweq-2026",
+    "name": "Newburgh Wastewater Treatment Plant Improvements (Flow Equalization Basin)",
+    "location": "Newburgh, Warrick County, IN",
+    "type": "Wet weather storage / headworks / screening upgrade",
+    "stage": "Under Construction",
+    "owner": "Town of Newburgh, IN",
+    "capacity": "Serves ~40,000 residents; new 45 MGD headworks",
+    "leadFirm": "Commonwealth Engineers, Inc.",
+    "competingFirms": [
+      "Reynolds Construction"
+    ],
+    "estValue": "Not disclosed",
+    "fundingSource": "Office of Community and Rural Affairs (OCRA) / municipal funds",
+    "timeline": "Groundbreaking June 10, 2026; complete by March 2028",
+    "source": "WFIE 14 News / Town of Newburgh",
+    "sourceUrl": "https://www.newburgh.in.gov/news_detail_T8_R98.php",
+    "notes": "Town celebrated a groundbreaking ceremony marking the launch of the Wastewater Treatment Plant Improvements Project, centered on a new 4-million-gallon wet weather equalization tank plus new headworks, hydrogen sulfide removal facility, and screening improvements.",
+    "dateAdded": "2026-07-17",
+    "lastUpdated": "2026-07-17"
+  },
+  {
+    "id": "wa-wallawalla-wwtp-digester-2026",
+    "name": "Wastewater Treatment Plant Digester Upgrades Project",
+    "location": "Walla Walla, WA",
+    "type": "Biosolids handling / digester rehabilitation",
+    "stage": "Design",
+    "owner": "City of Walla Walla",
+    "capacity": "9.6 MGD design capacity (plant)",
+    "leadFirm": "J-U-B Engineers",
+    "competingFirms": [],
+    "estValue": "$10 million",
+    "fundingSource": "Washington State Department of Ecology loan ($7 million) + Washington Public Works Board loan",
+    "timeline": "Design ~90% complete; construction July 2026–July 2027",
+    "source": "City of Walla Walla / Elkhorn Media Group",
+    "sourceUrl": "https://www.gowallawalla.us/current-projects/wwtp-digester",
+    "notes": "Project rehabilitates two primary digesters (new mixing/heating systems, protective coatings) and replaces boilers to use captured biogas as primary fuel. The total project cost is estimated to be approximately $10,000,000, funded by a $7,000,000 loan from Washington State Department of Ecology plus a Public Works Board loan.",
+    "dateAdded": "2026-07-17",
+    "lastUpdated": "2026-07-17"
   }
 ];
 
@@ -3034,6 +3116,22 @@ const OWNER_CONTACTS = {
   "Frederick County, MD (Department of Wastewater Treatment and Disposal)": {
     "website": "https://frederickcountymd.gov/1283/Wastewater-Treatment-Disposal",
     "phone": "301-600-1825"
+  },
+  "Town of Narragansett, RI": {
+    "website": "https://www.narragansettri.gov",
+    "phone": "401-789-1044"
+  },
+  "Port Royal Municipal Authority": {
+    "website": "https://www.cpengineers.com/cp-port-royal-municipal-authority-project-juniata-county-pa/",
+    "phone": ""
+  },
+  "Town of Newburgh, IN": {
+    "website": "https://www.newburgh.in.gov",
+    "phone": "812-853-1720"
+  },
+  "City of Walla Walla": {
+    "website": "https://www.wallawallawa.gov",
+    "phone": "509-527-4537"
   }
 };
 
@@ -3255,6 +3353,21 @@ const FIRM_CONTACTS = [
     "name": "Slayden Constructors",
     "website": "https://www.slayden.com/",
     "phone": "503.769.1969"
+  },
+  {
+    "name": "CP Engineers",
+    "website": "https://www.cpengineers.com",
+    "phone": "814-753-4249"
+  },
+  {
+    "name": "Commonwealth Engineers, Inc.",
+    "website": "https://commonwealthengineers.com",
+    "phone": ""
+  },
+  {
+    "name": "J-U-B Engineers",
+    "website": "https://www.jub.com",
+    "phone": "208-376-7330"
   }
 ];
 
