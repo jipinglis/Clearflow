@@ -250,7 +250,7 @@ footer{text-align:center;padding:30px;font-size:12.5px;color:var(--gray-700);bor
 // verify current status there before acting, since procurement stages and
 // dollar figures change frequently.
 // ---------------------------------------------------------------------------
-const LAST_CHECKED = "2026-07-17";
+const LAST_CHECKED = "2026-07-18";
 
 const PROJECTS = [
   {
@@ -2222,16 +2222,16 @@ const PROJECTS = [
     "stage": "Pre-Design",
     "owner": "City of Elgin, TX",
     "capacity": "Initial 3.0 MGD, expandable in phases to 6.0 MGD; built on ~38 acres near Littig and County Line roads",
-    "leadFirm": "Not yet publicly confirmed",
+    "leadFirm": "Ward Zettgett and Associates",
     "competingFirms": [],
-    "estValue": "$106.4M (engineering/design agreement authorized)",
+    "estValue": "~$106.4M total plant cost (developer pro rata funded); ~$2M city share for design phase",
     "fundingSource": "Developer agreements + wastewater impact fees (impact fee raised to $5,800/connection); four MUDs committed to ~61% of initial capacity",
     "timeline": "Design/engineering agreement authorized 2025; odor-control design and additional engineering approved July 2026; permitting ~15-18 months; potentially operational in about four years",
     "source": "CitizenPortal.ai / Elgin Courier",
     "sourceUrl": "https://citizenportal.ai/articles/5397654/Elgin/Bastrop-County/Texas/Elgin-City-Council-approves-106M-wastewater-treatment-plant-engineering-agreement",
     "dateAdded": "2026-07-13",
-    "lastUpdated": "2026-07-13",
-    "notes": "New second wastewater plant serving Elgin's rapid growth east of Austin; majority of costs covered by municipal utility districts and impact fees rather than existing taxpayers. Proposed Littig-area site has drawn community opposition."
+    "lastUpdated": "2026-07-18",
+    "notes": "City Council approved engineering design agreement with Ward Zettgett and Associates for WWTP No. 2 (3 MGD plant); four development agreements with MUDs account for ~61% of capacity (1.87 MGD) and cover pro rata share of design/construction costs in escrow. Design phase expected to take 15-18 months."
   },
   {
     "id": "fl-orangecounty-eastern-wrf-expansion-2026",
@@ -2663,6 +2663,82 @@ const PROJECTS = [
     "notes": "Project rehabilitates two primary digesters (new mixing/heating systems, protective coatings) and replaces boilers to use captured biogas as primary fuel. The total project cost is estimated to be approximately $10,000,000, funded by a $7,000,000 loan from Washington State Department of Ecology plus a Public Works Board loan.",
     "dateAdded": "2026-07-17",
     "lastUpdated": "2026-07-17"
+  },
+  {
+    "id": "ks-salina-wwtp-bnr-2026",
+    "name": "Salina Wastewater Treatment Plant Improvement Project (BNR Upgrade)",
+    "location": "Salina, KS",
+    "type": "WWTP upgrade / Biological Nutrient Removal (BNR)",
+    "stage": "Under Construction",
+    "owner": "City of Salina, Kansas",
+    "capacity": "7.25 MGD permitted design flow",
+    "leadFirm": "Black & Veatch (Overland Contracting Inc.)",
+    "competingFirms": [],
+    "estValue": "Undisclosed total; includes $41.5M KDHE Water Pollution Control Revolving Fund loan; GMP established Aug 2022",
+    "fundingSource": "Kansas Water Pollution Control Revolving Fund (KDHE) plus city utility funds",
+    "timeline": "Notice to proceed awarded Feb 2023; construction ongoing under progressive design-build",
+    "source": "Black & Veatch project page / City of Salina Utilities",
+    "sourceUrl": "https://www.bv.com/projects/black-and-veatch-awarded-as-design-builder-for-wastewater-treatment-plant-modernizations-in-salina-kansas/",
+    "notes": "Progressive design-build EPC project converting aeration basins to modern BNR system, adding chemical phosphorus removal, rehabilitating Clarifiers 1-3 and constructing new Clarifier 4, to meet new NPDES nutrient limits. Plant built 1926, last major upgrade ~1994.",
+    "dateAdded": "2026-07-18",
+    "lastUpdated": "2026-07-18"
+  },
+  {
+    "id": "ca-atascadero-wrf-replacement-2026",
+    "name": "Atascadero Water Reclamation Facility Replacement",
+    "location": "Atascadero, CA",
+    "type": "WWTP replacement (lagoon system to MBR/oxidation ditch)",
+    "stage": "Design",
+    "owner": "City of Atascadero",
+    "capacity": "2.2 MGD annual average / 6 MGD max day (per program scope)",
+    "leadFirm": "Black & Veatch",
+    "competingFirms": [],
+    "estValue": "Estimated $173M-$300M across four phases",
+    "fundingSource": "Sewer rate increases (37% approved) and city wastewater fund; state funding being pursued",
+    "timeline": "Phase 1 preliminary design targeted completion late spring 2026; multi-phase program",
+    "source": "New Times San Luis Obispo / City of Atascadero",
+    "sourceUrl": "https://www.newtimesslo.com/city-unanimously-selects-black-and-veatch-to-lead-design-of-atascaderos-wastewater-treatment-plant-replacement/",
+    "notes": "Existing lagoon-based treatment system no longer permitted under CA regulations, driving full replacement including new MBR/oxidation ditch secondary treatment, headworks retrofit, and new UV disinfection.",
+    "dateAdded": "2026-07-18",
+    "lastUpdated": "2026-07-18"
+  },
+  {
+    "id": "or-sandy-wwtp-consentdecree-2026",
+    "name": "Sandy Wastewater System Improvements (Clean Water Act Consent Decree)",
+    "location": "Sandy, OR",
+    "type": "WWTP upgrade / consent decree compliance / regional conveyance option",
+    "stage": "Planning / CIP",
+    "owner": "City of Sandy, OR",
+    "capacity": "Serves ~12,000 population",
+    "leadFirm": "",
+    "competingFirms": [],
+    "estValue": "~$76M (on-site MBR expansion) plus $58M-$71M (conveyance/discharge improvements)",
+    "fundingSource": "State of Oregon funding request ($14M initial ask), local ratepayer funding, consent decree-driven capital program",
+    "timeline": "15-year compliance schedule under Sept. 2023 consent decree; 2026 Facility Plan Amendment under council consideration",
+    "source": "City of Sandy 2026 Wastewater Facility Plan Amendment / EPA enforcement settlement",
+    "sourceUrl": "https://www.ci.sandy.or.us/sites/default/files/fileattachments/public_works/page/24001/sandy_2026_wastewater_facility_plan_amendment.pdf",
+    "notes": "City evaluating on-site MBR expansion with groundwater discharge versus regional pipeline to pump wastewater to Gresham WWTP; driven by 2023 CWA consent decree and Three Basin Rule discharge limits.",
+    "dateAdded": "2026-07-18",
+    "lastUpdated": "2026-07-18"
+  },
+  {
+    "id": "in-bluffton-wwtp-expansion-2026",
+    "name": "Bluffton Wastewater Treatment Plant Expansion",
+    "location": "Bluffton, IN",
+    "type": "WWTP expansion",
+    "stage": "Completed",
+    "owner": "City of Bluffton, IN",
+    "capacity": "6 MGD daily flow / 13 MGD peak daily flow (upgraded from 6/9 MGD)",
+    "leadFirm": "",
+    "competingFirms": [],
+    "estValue": "$32 million",
+    "fundingSource": "Not specified",
+    "timeline": "Ribbon cutting ceremony scheduled July 22, 2026",
+    "source": "News Banner / City of Bluffton, IN",
+    "sourceUrl": "https://blufftonindiana.net/190/Wastewater-Treatment-Plant",
+    "notes": "Expansion of combined 1976/1997-built plant to increase peak flow capacity from 9 MGD to 13 MGD.",
+    "dateAdded": "2026-07-18",
+    "lastUpdated": "2026-07-18"
   }
 ];
 
