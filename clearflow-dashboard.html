@@ -250,7 +250,7 @@ footer{text-align:center;padding:30px;font-size:12.5px;color:var(--gray-700);bor
 // verify current status there before acting, since procurement stages and
 // dollar figures change frequently.
 // ---------------------------------------------------------------------------
-const LAST_CHECKED = "2026-07-22";
+const LAST_CHECKED = "2026-07-23";
 
 const PROJECTS = [
   {
@@ -1859,16 +1859,16 @@ const PROJECTS = [
     "stage": "Under Construction",
     "owner": "City of Lewisville, TX",
     "capacity": "12 MGD → 16 MGD (long-term goal 20 MGD)",
-    "leadFirm": "Crescent Constructors (Zachry Construction affiliate)",
+    "leadFirm": "Crescent Constructors (Zachry Construction)",
     "competingFirms": [],
-    "estValue": "~$89M",
+    "estValue": "$89 million",
     "fundingSource": "City capital program",
-    "timeline": "Final completion scheduled November 28, 2028",
+    "timeline": "Completion scheduled for November 28, 2028",
     "source": "Wastewater Digest",
     "sourceUrl": "https://www.wwdmag.com/utility-management/news/55388062/lewisville-awards-first-phase-of-prairie-creek-wwtp-expansion",
     "dateAdded": "2026-07-09",
-    "lastUpdated": "2026-07-17",
-    "notes": "Crescent Constructors, an affiliate of Zachry Construction Corporation, has been awarded the Prairie Creek Wastewater Treatment Plant Aeration Basin Expansion project, increasing plant capacity from 12 MGD to 16 MGD with a long-term goal of 20 MGD; final completion scheduled for November 28, 2028."
+    "lastUpdated": "2026-07-23",
+    "notes": "Crescent Constructors, part of Zachry Construction, won an $89 million contract to expand the Prairie Creek Wastewater Treatment Plant in Lewisville, Texas, increasing capacity from 12 to 16 MGD via aeration basin expansion, rehabilitation and system upgrades; completion set for Nov. 28, 2028."
   },
   {
     "id": "tx-tyler-consentdecree-wwcontracts-2026",
@@ -2993,6 +2993,63 @@ const PROJECTS = [
     "notes": "Village will reconstruct approximately 3,700 linear feet of wastewater collection system to reduce inflow of clear water to the treatment plant, increasing efficiency and extending plant life.",
     "dateAdded": "2026-07-22",
     "lastUpdated": "2026-07-22"
+  },
+  {
+    "id": "md-stmarys-stclementshores-enr-2026",
+    "name": "St. Clements Shores Wastewater Treatment Plant Upgrade & Expansion (Enhanced Nutrient Removal)",
+    "location": "St. Mary's County, MD",
+    "type": "Nutrient Removal (BNR/ENR) Upgrade & Expansion",
+    "stage": "Bidding/Procurement",
+    "owner": "St. Mary's County Metropolitan Commission (MetCom)",
+    "capacity": "160,000 gpd average daily flow",
+    "leadFirm": "Scheibel Construction",
+    "competingFirms": [],
+    "estValue": "Not disclosed",
+    "fundingSource": "Not disclosed (likely Maryland Bay Restoration Fund / MDE ENR program)",
+    "timeline": "Construction projected to start later summer 2026",
+    "source": "Scheibel Construction",
+    "sourceUrl": "https://www.scheibelconstruction.com/news/st-clements-shores-waste-water-treatment-plant-award/",
+    "notes": "Scheibel Construction has been awarded the St. Clements Shores Waste Water Treatment Plant project in St. Mary's County, MD, consisting of upgrades and expansion to provide enhanced nutrient removal (ENR) for a capacity of 160,000 gpd average daily flow.",
+    "dateAdded": "2026-07-23",
+    "lastUpdated": "2026-07-23"
+  },
+  {
+    "id": "ma-barnstable-wpcf-nitrogen-headworks-2026",
+    "name": "Barnstable Water Pollution Control Facility Nitrogen Removal Improvements & New Headworks Facility",
+    "location": "Barnstable, MA (Cape Cod)",
+    "type": "Nutrient Removal (BNR) / Headworks Upgrade",
+    "stage": "Design",
+    "owner": "Town of Barnstable, MA (Department of Public Works / Water Pollution Control Division)",
+    "capacity": "Not specified",
+    "leadFirm": "Not disclosed",
+    "competingFirms": [],
+    "estValue": "$109 million (capital appropriation)",
+    "fundingSource": "Municipal capital appropriation / Massachusetts SRF (Clean Water Trust)",
+    "timeline": "Phase 1 (headworks + Bardenpho/MBR nitrogen removal) advancing through design; part of 30-year Comprehensive Wastewater Management Plan",
+    "source": "Town of Barnstable / MA Clean Water Trust Board project descriptions",
+    "sourceUrl": "https://barnstablewaterresources.com/comprehensive-waste-water-management-plan/",
+    "notes": "Barnstable Town Council approved a $109 Million capital appropriation for upgrades to the Barnstable Water Pollution Control Division's treatment plant, with Phase 1 consisting of a new 4-stage Bardenpho process followed by a membrane bioreactor plus a new headworks facility, expected to reduce effluent nitrogen from ~6 mg/L to 3 mg/L or less. Listed in Massachusetts Clean Water Trust board project descriptions through at least January 2026.",
+    "dateAdded": "2026-07-23",
+    "lastUpdated": "2026-07-23"
+  },
+  {
+    "id": "fl-estero-packageplant-decommission-2026",
+    "name": "Cypress Bend & Sunny Grove Package Wastewater Treatment Plant Decommissioning / Sewer Consolidation",
+    "location": "Estero, FL (Lee County)",
+    "type": "Consolidation/Regionalization — Package Plant Decommissioning",
+    "stage": "Under Construction",
+    "owner": "Village of Estero, FL",
+    "capacity": "Not specified",
+    "leadFirm": "Wright Construction Group",
+    "competingFirms": [],
+    "estValue": "Village contribution of $557,681 (25% of project cost) for Cypress Bend; additional funding for Sunny Grove",
+    "fundingSource": "Village of Estero (reimbursable via grants and community payments)",
+    "timeline": "Construction scheduled for completion by August 26, 2026",
+    "source": "Village of Estero, FL",
+    "sourceUrl": "https://estero-fl.gov/council-recognized-estero-students-and-addressed-utility-expansion-project-funding-on-december-17-2025/",
+    "notes": "The Village has been working to extend municipal wastewater services to the Cypress Bend and Sunny Grove communities and decommission their existing package wastewater treatment plants, with Council approving a contract with Wright Construction for this work.",
+    "dateAdded": "2026-07-23",
+    "lastUpdated": "2026-07-23"
   }
 ];
 
@@ -3486,6 +3543,10 @@ const OWNER_CONTACTS = {
   "Lee County Utilities": {
     "website": "https://www.leegov.com/utilities",
     "phone": "239-533-8845"
+  },
+  "Village of Estero, FL": {
+    "website": "https://estero-fl.gov",
+    "phone": ""
   }
 };
 
@@ -3737,6 +3798,16 @@ const FIRM_CONTACTS = [
     "name": "Poole & Kent Company of Florida",
     "website": "https://pkflorida.com",
     "phone": "305-325-1930"
+  },
+  {
+    "name": "Scheibel Construction",
+    "website": "https://www.scheibelconstruction.com",
+    "phone": "(301) 855-7900"
+  },
+  {
+    "name": "Wright Construction Group",
+    "website": "https://www.wcgfl.com",
+    "phone": "(239) 481-5000"
   }
 ];
 
