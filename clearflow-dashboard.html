@@ -250,7 +250,7 @@ footer{text-align:center;padding:30px;font-size:12.5px;color:var(--gray-700);bor
 // verify current status there before acting, since procurement stages and
 // dollar figures change frequently.
 // ---------------------------------------------------------------------------
-const LAST_CHECKED = "2026-07-26";
+const LAST_CHECKED = "2026-07-27";
 
 const PROJECTS = [
   {
@@ -1019,9 +1019,9 @@ const PROJECTS = [
     "location": "Franklin, TN",
     "type": "Nutrient Removal (BNR)",
     "stage": "Design",
-    "owner": "City of Franklin, TN",
+    "owner": "Limestone Water Utility Operating Company (Central States Water Resources)",
     "capacity": "Expanding from 0.25 MGD to 0.45 MGD",
-    "leadFirm": "Goodwyn Mills Cawood (design)",
+    "leadFirm": "Goodwyn Mills Cawood (GMC)",
     "competingFirms": [],
     "estValue": "Not publicly disclosed",
     "fundingSource": "Not specified",
@@ -1029,8 +1029,8 @@ const PROJECTS = [
     "source": "Construction Owners Association of America",
     "sourceUrl": "https://www.constructionowners.com/news/goodwyn-mills-cawood-advances-tennessee-wastewater-upgrade-with-aerobic-granular-sludge-technology",
     "dateAdded": "2026-07-02",
-    "lastUpdated": "2026-07-02",
-    "notes": "Tennessee's first Aerobic Granular Sludge (AGS) wastewater treatment technology installation."
+    "lastUpdated": "2026-07-27",
+    "notes": "Confirmed as the Grassland Sewage Treatment Plant — a privately owned facility (Limestone Water Utility Operating Company, part of Central States Water Resources) serving the Grassland community near Franklin, TN, discharging to the Harpeth River. GMC-designed project will be Tennessee's first full-scale Aerobic Granular Sludge (AGS) facility, increasing capacity from 0.25 MGD to 0.45 MGD; construction expected to begin late summer 2026 with completion targeted spring 2028."
   },
   {
     "id": "wi-portage-wwtp-2026",
@@ -3202,6 +3202,67 @@ const PROJECTS = [
     "notes": "EPA approved a $28 million WIFIA loan to reduce pipeline failure risk and improve system reliability. Projects include replacing water mains, rehabilitating and replacing wastewater lift stations and force mains, and improving stormwater drainage systems, addressing sanitary sewer overflows under the city's 2020 Water, Wastewater & Stormwater Integrated Master Plan.",
     "dateAdded": "2026-07-26",
     "lastUpdated": "2026-07-26"
+  },
+  {
+    "id": "ks-lawrence-kansasriver-wwtp-2026",
+    "name": "Kansas River Wastewater Treatment Plant Modernization",
+    "location": "Lawrence, KS",
+    "type": "Upgrade/Rehabilitation, Nutrient Removal (BNR), Disinfection Upgrade",
+    "stage": "Completed",
+    "owner": "City of Lawrence, KS (Municipal Services and Operations Department)",
+    "capacity": "8 MGD average daily flow; 25 MGD dry weather / 40 MGD additional wet weather capacity",
+    "leadFirm": "McCarthy Building Companies",
+    "competingFirms": [
+      "Black & Veatch"
+    ],
+    "estValue": "$74.3 million",
+    "fundingSource": "Municipal (CMAR delivery)",
+    "timeline": "Construction began May 2023; completed with ribbon-cutting July 2026",
+    "source": "Wastewater Digest / Construction Dive / Smart Water Magazine",
+    "sourceUrl": "https://www.wwdmag.com/utility-management/news/55383875/lawrence-completes-743-million-modernization-of-kansas-river-wastewater-treatment-plant",
+    "notes": "Project converted four aeration basins to biological nutrient removal (BNR), replaced chlorine disinfection with UV, added new SCADA control facility, and modernized electrical infrastructure. Black & Veatch served as engineer of record; McCarthy Building Companies was general contractor using CMAR delivery, the city's first use of that method for a wastewater project.",
+    "dateAdded": "2026-07-27",
+    "lastUpdated": "2026-07-27"
+  },
+  {
+    "id": "mi-saginawtownship-wwtp-expansion-2026",
+    "name": "Saginaw Charter Township Wastewater Treatment Plant Expansion",
+    "location": "Saginaw Charter Township, MI",
+    "type": "Expansion",
+    "stage": "Under Construction",
+    "owner": "Saginaw Charter Township",
+    "capacity": "Increasing to 600,000 gallons per day",
+    "leadFirm": "Spicer Group",
+    "competingFirms": [
+      "Spence Brothers"
+    ],
+    "estValue": "$27 million",
+    "fundingSource": "Municipal (industrial development driven)",
+    "timeline": "Groundbreaking April 10, 2026; Phase I completion anticipated fall 2027",
+    "source": "WNEM TV5",
+    "sourceUrl": "https://www.wnem.com/2026/03/27/saginaw-charter-township-hold-groundbreaking-ceremony-wastewater-treatment-plant/",
+    "notes": "Expansion driven by major industrial development in the Great Lakes Bay Region, including Hemlock Semiconductor and Solar Technologies. Saginaw-based Spicer Group is engineer of record; Spence Brothers is general contractor.",
+    "dateAdded": "2026-07-27",
+    "lastUpdated": "2026-07-27"
+  },
+  {
+    "id": "co-montrose-wwtp-improvement-2026",
+    "name": "Montrose Wastewater Treatment Plant Improvement Project",
+    "location": "Montrose, CO",
+    "type": "Upgrade/Rehabilitation, Nutrient Removal (Phosphorus), Disinfection Upgrade",
+    "stage": "Under Construction",
+    "owner": "City of Montrose, CO (Utilities Department)",
+    "capacity": "4.32 MGD permitted capacity",
+    "leadFirm": "Moltz Construction",
+    "competingFirms": [],
+    "estValue": "$33.6 million",
+    "fundingSource": "Revenue bonds (wastewater system user fees)",
+    "timeline": "Groundbreaking March 16, 2026; construction continuing through fall 2027",
+    "source": "City of Montrose / Western Slope Now",
+    "sourceUrl": "https://www.cityofmontrose.org/m/newsflash?cat=1%2C6%2C5",
+    "notes": "Design-build project adds a new anaerobic basin for biological phosphorus removal to meet future Colorado Regulation 85 nutrient limits, replaces aging influent screw pumps, oxidation ditch aerators, and UV disinfection system, and adds a higher-capacity standby generator. Moltz Construction is the design-build contractor.",
+    "dateAdded": "2026-07-27",
+    "lastUpdated": "2026-07-27"
   }
 ];
 
@@ -3727,6 +3788,22 @@ const OWNER_CONTACTS = {
   "City of Wilton Manors, FL": {
     "website": "https://www.wiltonmanors.gov",
     "phone": "(954) 390-2190"
+  },
+  "City of Lawrence, KS": {
+    "website": "https://lawrenceks.gov",
+    "phone": ""
+  },
+  "Saginaw Charter Township": {
+    "website": "",
+    "phone": ""
+  },
+  "City of Montrose, CO": {
+    "website": "https://www.cityofmontrose.org",
+    "phone": ""
+  },
+  "Limestone Water Utility Operating Company (Central States Water Resources)": {
+    "website": "https://www.centralstateswaterresources.com",
+    "phone": "(314) 736-4672"
   }
 };
 
@@ -4003,6 +4080,26 @@ const FIRM_CONTACTS = [
     "name": "KSA Engineers, Inc.",
     "website": "https://ksaeng.com",
     "phone": "(512) 342-6868"
+  },
+  {
+    "name": "Black & Veatch",
+    "website": "https://www.bv.com",
+    "phone": "(913) 458-2000"
+  },
+  {
+    "name": "Moltz Construction",
+    "website": "https://moltzconstruction.com",
+    "phone": "(719) 539-7319"
+  },
+  {
+    "name": "Spicer Group",
+    "website": "https://www.spicergroup.com",
+    "phone": "(989) 754-4717"
+  },
+  {
+    "name": "Spence Brothers",
+    "website": "https://www.spencebrothers.com",
+    "phone": "(989) 752-0400"
   }
 ];
 
