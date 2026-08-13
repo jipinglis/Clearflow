@@ -250,7 +250,7 @@ footer{text-align:center;padding:30px;font-size:12.5px;color:var(--gray-700);bor
 // verify current status there before acting, since procurement stages and
 // dollar figures change frequently.
 // ---------------------------------------------------------------------------
-const LAST_CHECKED = '2026-08-12';
+const LAST_CHECKED = '2026-08-13';
 
 const PROJECTS = [
   {
@@ -4277,6 +4277,48 @@ const PROJECTS = [
     "dateAdded": "2026-08-12",
     "lastUpdated": "2026-08-12",
     "notes": "Part of a ~$163M TWDB August 2026 financial assistance package. Small East Texas municipal system; scope described only as 'wastewater system improvements'."
+  },
+  {
+    "id": "fl-hillsborough-onewater-south-2026",
+    "name": "One Water – South Wastewater Conveyance and Treatment Project",
+    "location": "Hillsborough County / Tampa, FL",
+    "type": "New Facility/Expansion",
+    "stage": "Under Construction",
+    "owner": "Hillsborough County, FL (Public Utilities / Water Resources Department)",
+    "capacity": "One Water Campus Advanced Wastewater Treatment Facility built for 24 MGD, designed to expand to 30 MGD with minimal operational disruption; Balm Road Super Lift Station at 54 MGD with a 5 MG emergency storage tank; 10 miles of wastewater pipeline and 13 miles of reclaimed water pipeline (42-48 in. ductile iron)",
+    "leadFirm": "Garney Construction (progressive design-build contractor); Hazen and Sawyer (engineer of record)",
+    "competingFirms": [
+      "Ardurra (subconsultant)",
+      "Stantec (subconsultant)",
+      "Wade Trim (subconsultant)"
+    ],
+    "estValue": "$1.2 billion",
+    "fundingSource": "Hillsborough County capital improvement program (largest CIP in county history)",
+    "timeline": "Pipeline construction began fall 2025; AWWTF and lift station groundbreaking April 24, 2026; initial flows expected September 2028; full project completion anticipated 2030",
+    "source": "Water Finance & Management / Garney",
+    "sourceUrl": "https://waterfm.com/garney-breaks-ground-on-tampas-one-water-countys-largest-ever-cip/",
+    "dateAdded": "2026-08-13",
+    "lastUpdated": "2026-08-13",
+    "notes": "Largest capital improvement project in Hillsborough County history. Delivered via progressive design-build, which means major equipment and subcontract packages are still being bought out through 2026-2028 even though the project is already under construction. Three distinct components (treatment facility, super lift station, 20+ miles of pipeline) create separate procurement windows. Reclaimed water is returned to the county's public reuse system. Garney is concurrently building Tampa Bay Water's $505.7M South Hillsborough Pipeline in the same market."
+  },
+  {
+    "id": "sd-rapidcity-wrf-southplant-2026",
+    "name": "Water Reclamation Facility South Plant Improvements",
+    "location": "Rapid City, SD",
+    "type": "Upgrade/Expansion",
+    "stage": "Under Construction",
+    "owner": "City of Rapid City, SD (Public Works — Water Reclamation Division)",
+    "capacity": "Expansion of the existing activated sludge treatment train (South Plant): additional aeration basin, two additional secondary clarifiers, dewatering building, pump building, blower building, solids holding tank, UV/post-aeration building and associated equipment; demolition of North Plant facilities",
+    "leadFirm": "PKG Contracting, Inc. (Fargo, ND) — general contractor, Construction Package 2",
+    "competingFirms": [],
+    "estValue": "$204.8 million (total project cost, per City of Rapid City project site)",
+    "fundingSource": "$136.5M State Revolving Fund loans (66%); $52.8M grant funding including the largest ARPA grant offered to the city (25%); $18M Water Reclamation Enterprise Funds (9%)",
+    "timeline": "Construction began 2024. Stage 1 (new South Plant facilities) 2024-2028; Stage 2 (improvements to existing South Plant facilities) 2025-2028; Stage 3 (North Plant demolition) 2026-2028 — currently in Stage 3. Estimated completion winter 2028.",
+    "source": "City of Rapid City — WRF South Plant Improvements project site",
+    "sourceUrl": "https://wrf.rcgov.org/",
+    "dateAdded": "2026-08-13",
+    "lastUpdated": "2026-08-13",
+    "notes": "Rapid City's largest infrastructure project to date. The April 2024 bid award to PKG Contracting was the highest single bid ever awarded in the city's history. Project is fully funded including change-order contingency. Dewatering Building scheduled for completion in 2027; Solids Holding Tank 2027. Note: some secondary reporting cites a ~$207M total; the $204.8M figure above is taken directly from the City's own project site."
   }
 
 ];
@@ -4888,7 +4930,15 @@ const OWNER_CONTACTS = {
   "Los Angeles County Sanitation Districts": {"website":"lacsd.org","phone":"562-908-4288"},
   "City of Graham": {"website":"cityofgrahamtexas.com","phone":"940-549-3324"},
   "City of Mandan": {"website":"cityofmandan.com","phone":"701-667-3215"},
-  "City of Gloucester, MA": {"website":"gloucester-ma.gov","phone":"978-325-5600"}
+  "City of Gloucester, MA": {"website":"gloucester-ma.gov","phone":"978-325-5600"},
+  "Hillsborough County, FL (Public Utilities / Water Resources Department)": {
+    "website": "hcfl.gov",
+    "phone": "813-307-1000"
+  },
+  "City of Rapid City, SD (Public Works — Water Reclamation Division)": {
+    "website": "rcgov.org",
+    "phone": "605-394-4174"
+  }
 };
 
 const FIRM_CONTACTS = [
