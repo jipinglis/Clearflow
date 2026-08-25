@@ -250,7 +250,7 @@ footer{text-align:center;padding:30px;font-size:12.5px;color:var(--gray-700);bor
 // verify current status there before acting, since procurement stages and
 // dollar figures change frequently.
 // ---------------------------------------------------------------------------
-const LAST_CHECKED = '2026-08-24';
+const LAST_CHECKED = '2026-08-25';
 
 const PROJECTS = [
     {
@@ -310,25 +310,7 @@ const PROJECTS = [
       "lastUpdated": "2026-06-19",
       "notes": "Covers the Wilbarger Creek Regional WWTF plus a new wastewater treatment plant and consolidation of collection systems as the city grows rapidly north of Austin."
     },
-    {
-      "id": "va-arlington-regen-biosolids-2026",
-      "name": "Arlington Re-Gen — Water Pollution Control Plant Biosolids Upgrade",
-      "location": "Arlington County, VA",
-      "type": "Biosolids Handling",
-      "stage": "Design",
-      "owner": "Arlington County Department of Environmental Services",
-      "capacity": "Serves Arlington County's Water Pollution Control Plant",
-      "leadFirm": "PC Construction (design-build contractor); Stantec (design)",
-      "competingFirms": [],
-      "estValue": "~$175M",
-      "fundingSource": "County capital bonds",
-      "timeline": "Progressive design-build; main construction expected to begin late 2026 through spring 2031",
-      "source": "Wastewater Digest",
-      "sourceUrl": "https://www.wwdmag.com/utility-management/news/55362284/arlington-county-launches-modernization-of-water-pollution-control-plant",
-      "dateAdded": "2026-06-19",
-      "lastUpdated": "2026-06-19",
-      "notes": "Adds a thermal hydrolysis process (THP) to produce Class A biosolids and captures biogas as a renewable energy source; the county's first progressive design-build project."
-    },
+    {"id":"va-arlington-regen-biosolids-2026","name":"Arlington Re-Gen — Water Pollution Control Plant Biosolids Upgrade","location":"Arlington County, VA","type":"Biosolids Handling","stage":"Under Construction","owner":"Arlington County Department of Environmental Services","capacity":"Serves Arlington County's Water Pollution Control Plant","leadFirm":"PC Construction (design-build contractor); Stantec (design)","competingFirms":[],"estValue":"~$175M design-build contract; approximately $200M total program, including a $32.2M first-phase Early Work Package","fundingSource":"County capital bonds","timeline":"Progressive design-build; Early Work Package (grading, building demolitions, utility relocation and foundation work) launched March 2026; main construction expected to begin late 2026 and continue through spring 2031","source":"Wastewater Digest","sourceUrl":"https://www.wwdmag.com/utility-management/news/55362284/arlington-county-launches-modernization-of-water-pollution-control-plant","dateAdded":"2026-06-19","lastUpdated":"2026-08-25","notes":"Adds a thermal hydrolysis process (THP) to produce Class A biosolids and captures biogas as a renewable energy source; the county's first progressive design-build project. Update (Aug 2026 check): the $32.2M first-phase Early Work Package is underway, ahead of the main construction phase starting in late 2026."},
     {
       "id": "ca-sandiego-southbay-intl-wwtp-2026",
       "name": "South Bay International Wastewater Treatment Plant Rehabilitation & Expansion",
@@ -4564,7 +4546,9 @@ const PROJECTS = [
       "dateAdded": "2026-08-24",
       "lastUpdated": "2026-08-24",
       "notes": "Driven by State of Iowa and EPA requirements to move off seasonal lagoon discharge to continuous discharge. Winning bid came in slightly above the city's engineer estimate but was the lowest received. Contract award is ahead of SRF loan closing, so financing confirmation is the next milestone to watch; small-community project with mechanical/process equipment scope."
-    }
+    },
+{"id":"tx-sanmarcos-fm1978-wrf-2026","name":"FM 1978 Water Reclamation Facility","location":"San Marcos, Hays County, TX","type":"New Construction","stage":"Design","owner":"City of San Marcos","capacity":"New 2 MGD water reclamation facility, plus a fast-tracked interim wastewater management system to serve new homes before the permanent plant is complete","leadFirm":"Burns & McDonnell (progressive design-build)","competingFirms":[],"estValue":"GMP Package 1 (adds $37M-$42M) and GMP Package 2 (adds $57M-$62M) went to City Council on July 7, 2026; a third GMP package is scheduled for a September 2026 council vote","fundingSource":"City water and wastewater capital program, supported by a cost-sharing agreement with several residential developers","timeline":"Burns & McDonnell selected for progressive design-build September 22, 2025; 60% design complete on GMP packages 1 and 2 as of June 2026; construction expected to begin October 2026 and be complete September 2028","source":"Community Impact / Burns & McDonnell","sourceUrl":"https://communityimpact.com/austin/san-marcos-buda-kyle/development/2026/06/15/san-marcos-to-increase-wastewater-services-through-new-reclamation-facility/","dateAdded":"2026-08-25","lastUpdated":"2026-08-25","notes":"New centralized wastewater treatment facility driven by rapid residential growth in Hays County. Delivered under a single progressive design-build contract covering both the interim pump-and-haul system and the permanent plant. Part of a broader San Marcos water and wastewater capital push; council approved over $100M in water and wastewater project funding in April 2026."}
+
   ];
 
 // ---------------------------------------------------------------------------
@@ -5196,7 +5180,9 @@ const OWNER_CONTACTS = {
   "Weirton Sanitary Board": {
     "website": "weirtonutilities.com",
     "phone": "304-797-8550"
-  }
+  },
+"City of San Marcos": {"website":"sanmarcostx.gov","phone":"512-393-8000"}
+
 };
 
 const FIRM_CONTACTS = [
@@ -5550,7 +5536,9 @@ const FIRM_CONTACTS = [
     "name": "Webber Waterworks LLC",
     "website": "ferrovial.com/en-us/webber/waterworks",
     "phone": "281-907-8600"
-  }
+  },
+{"match":"Burns & McDonnell","name":"Burns & McDonnell","website":"burnsmcd.com","phone":"816-333-9400"}
+
 ];
 
 function getOwnerContact(owner) {
